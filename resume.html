@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serge Braverman — Resume</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #f5f5f0;
+      color: #222222;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.6;
+      padding: 2em;
+    }
+
+    #main-content {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: #fafaf7;
+      padding: 3em 4em;
+      border-radius: 4px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+
+    .back-link {
+      display: block;
+      margin-bottom: 1.5em;
+      font-size: 0.9em;
+      color: #1a3a5c;
+      text-decoration: none;
+      border-bottom: 1px solid #1a3a5c;
+      width: fit-content;
+      padding-bottom: 1px;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.1em;
+      color: #1a3a5c;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 2px solid #1a3a5c;
+      padding-bottom: 0.3em;
+      margin-top: 1.8em;
+      color: #1a3a5c;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      margin-bottom: 0.2em;
+      margin-top: 1.4em;
+      color: #1a3a5c;
+    }
+
+    p {
+      margin: 0.3em 0 0.8em 0;
+    }
+
+    ul {
+      margin: 0.3em 0 0.8em 0;
+      padding-left: 1.4em;
+    }
+
+    li {
+      margin-bottom: 0.3em;
+    }
+
+    strong {
+      color: #111;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 1.5em 0;
+    }
+
+    em {
+      color: #555;
+      font-style: normal;
+      font-size: 0.95em;
+    }
+
+    .contact {
+      color: #444;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="main-content">
+  <a class="back-link" href="index.html">← Back</a>
+
+  <h1>Serge Braverman</h1>
+  <p class="contact">San Francisco, CA &nbsp;·&nbsp; <a href="mailto:sergehb@gmail.com" style="color:#1a3a5c;">sergehb@gmail.com</a> &nbsp;·&nbsp; 415-323-6561 &nbsp;·&nbsp; <a href="https://linkedin.com/in/serge-braverman-49633a2" target="_blank" style="color:#1a3a5c;">LinkedIn</a></p>
+
+  <h2>Summary</h2>
+  <p>Infrastructure and reliability engineer with 16+ years building and operating systems at scale, now focused on AI infrastructure. Designed and implemented Critical User Journey monitoring used for incident detection and availability reporting across one of the world's largest SaaS platforms. Deep background in real-time communications infrastructure — SIP, Session Border Controllers, latency-sensitive media pipelines — spanning Vonage, Cisco Telepresence Exchange, and Salesforce Voice. Writes code to solve reliability problems: automation, instrumentation, tooling. Experienced Incident Commander with a track record of fast diagnosis under pressure, cross-team coordination, and driving RCA and corrective action to closure. Now targeting AI infrastructure roles, where the reliability challenges — inference latency, GPU utilization, multi-tenant isolation — are a natural extension of the SRE work I've done at scale.</p>
+
+  <hr />
+
+  <h2>Experience</h2>
+
+  <h3>Salesforce</h3>
+
+  <p><strong>Software Engineer — Customer Availability Products &amp; Services (CAPS)</strong> <em>October 2025 – April 2026</em></p>
+  <ul>
+    <li>Continued Platform Observability Engineering work within CAPS alongside Platform Infrastructure Development team</li>
+    <li>Participated in shared PagerDuty on-call rotation covering CAPS-owned products including CUJ automation infrastructure</li>
+    <li>Participated in CI/CD deployment process including triggering and reviewing releases</li>
+  </ul>
+
+  <p><strong>Lead SRE — Platform Observability Engineering (POE)</strong> <em>June 2021 – October 2025</em></p>
+  <ul>
+    <li>Selected as an early member of Salesforce's Resilience Engineering organization, focused on improving observability and Time to Detect across the platform</li>
+    <li><strong>President's Award recipient — FY23</strong> (top 1% of Engineering contributors, awarded by President of Technology and Chief Availability Officer) for:
+      <ul>
+        <li>Designed and implemented Selenium-based synthetic monitoring for Critical User Journeys</li>
+        <li>Partnered with internal monitoring tooling group to drive platform-level improvements to synthetic testing infrastructure</li>
+        <li>In response to a Sev0 release regression, stood up a tactical load generation solution by repurposing existing Selenium-based internal tooling to drive traffic across the fleet, enabling pre-release load validation while a proper framework was developed</li>
+      </ul>
+    </li>
+    <li>Led implementation and troubleshooting of end-to-end synthetic tests for Digital Engagement services including real-time messaging, AI chatbot infrastructure, and voice communications flows</li>
+    <li>Partnered with service owners operating below availability targets to develop and execute observability-driven Get Well Plans, focused on reducing Time to Detect</li>
+    <li>Led alert quality engineering initiative: conducted monitoring and alerting reviews with service owners to reduce notification noise and close detection gaps</li>
+    <li>Served as technical escalation point for high-severity incidents</li>
+    <li>Contributed to Python-based Critical User Journey codebase</li>
+  </ul>
+
+  <p><strong>Lead Site Reliability Engineer</strong> <em>April 2016 – June 2021</em></p>
+  <ul>
+    <li>Promoted from SRE → Senior SRE (July 2018) → Lead SRE (June 2021)</li>
+    <li>Championed glasswatching elimination against organizational pressure to deprioritize it; led the critical phase of transitioning from SRE-monitored dashboards to PagerDuty alerting routed directly to service-owning teams, including workflow design and stakeholder alignment</li>
+    <li>Reduced operational toil during major releases by identifying automation opportunities for tasks delegated to SRE; authored pseudocode specs for review and implementation by service-owning engineering teams</li>
+    <li>Designed SNMP-based expansion of automated asset tracking to cover third-party AWS servers, closing a gap that previously only captured first-party infrastructure; drove implementation through the internal asset tracking team and shepherded it through security approval</li>
+    <li>Helped restructure US Site Reliability team to a rotation model balancing operational and engineering work; implemented PagerDuty rotations for major incident on-call support</li>
+    <li>Served as Incident Commander for high-severity incidents; primary escalation point for management, customer, and executive contacts</li>
+    <li>Served as Shift Lead: day-to-day scheduling and operational coordination</li>
+    <li>Served as SRE Point of Contact for external SOX Compliance Audits</li>
+    <li>Participated in Global SRE Exchange Program (Singapore); trained acquired Demandware SRE team on Salesforce operations</li>
+  </ul>
+
+  <p><strong>Lead Voice Engineer</strong> <em>January 2012 – April 2016</em></p>
+  <ul>
+    <li>Deployed real-time communications infrastructure for Salesforce's global office expansion (SF, NYC, Chicago, London, Tokyo, Hyderabad, and others) and led telephony integration for acquired companies including ExactTarget, Buddy Media, Radian6, and Rypple</li>
+    <li>Architected company-wide Revolabs conference deployment as a cost-effective alternative to Cisco phones and Crestron systems; solved Cisco Call Manager's lack of third-party provisioning support by designing a TFTP-based workaround with bulk admin file generation, and drove it through security approval</li>
+    <li>Served as on-site IT liaison for new office builds in Paris and Tokyo; Tokyo engagement spanned nearly a month due to complex call routing and voicemail requirements</li>
+    <li>Championed on-site presence over remote delivery to implement extension mobility at the legacy Tokyo office, which required higher-touch engagement as a key sales office handling Salesforce's largest customers including Toyota</li>
+    <li>Served as Tier 4 operational escalation and subject matter expert for complex voice infrastructure issues</li>
+  </ul>
+
+  <hr />
+
+  <h3>Cisco Systems (Contractor)</h3>
+  <p><strong>Senior Voice/Video Network Engineer — Telepresence Exchange</strong> <em>November 2011 – January 2012</em></p>
+  <ul>
+    <li>Supported Cisco Telepresence Exchange (CTX), a hosted video interoperability service resold by AT&amp;T enabling communication between heterogeneous video conferencing systems (Cisco Telepresence, Tandberg, and others)</li>
+    <li>Infrastructure stack: Session Border Controllers, JVM-based SIP soft switches — same protocol layer as carrier-grade VoIP</li>
+    <li>Rebuilt lab environment for interoperability testing across endpoint types; wrote metrics-gathering scripts for RHEL5 servers</li>
+  </ul>
+
+  <hr />
+
+  <h3>Vocalocity (acquired by Vonage)</h3>
+  <p><strong>Senior Network Engineer — Network Engineering Operations</strong> <em>October 2009 – November 2011</em></p>
+  <ul>
+    <li>Owned the voice infrastructure stack at one of the first hosted business PBX providers (customers included call centers and SMBs); Vonage later acquired the company to form their business division — Vonage had previously been consumer-only</li>
+    <li>Scaled the platform through a critical growth phase, migrating from legacy appliance-based SBC (CXC) → Acme Packet SBC cluster → OpenSIPS/RTPproxy-based architecture — all three coexisting in production simultaneously during the transition</li>
+    <li>Served as technical POC and primary interface with Acme Packet engineers for the SBC implementation; managed complex operational issues including delayed-offer SIP and a wide range of BYOD user agents</li>
+    <li>Implemented OpenSIPS-based SIP registrar and RTPproxy-based media proxy; solution was adopted without modification post-acquisition — subsequent scaling achieved by adding capacity rather than rearchitecting</li>
+    <li>Fully puppetized the voice infrastructure stack, enabling repeatable deployments and configuration management at scale</li>
+    <li>Overhauled SIP proxy and registrar infrastructure, adding advanced authentication to combat fraudulent voice service usage</li>
+    <li>Designed and implemented MPLS connectivity, HA firewall clusters, and Layer 2/3 network redesign to support vertical expansion and security zone separation</li>
+    <li>Infrastructure work was instrumental in enabling the company's acquisition by Vonage</li>
+  </ul>
+
+  <hr />
+
+  <h2>Skills</h2>
+
+  <p><strong>Observability &amp; Reliability</strong><br />
+  Synthetic monitoring, Critical User Journey (CUJ) monitoring, alert quality engineering, incident detection, Time to Detect (TTD), SLOs, error budgets, Availability Reporting, Grafana (dashboards + API)</p>
+
+  <p><strong>Infrastructure &amp; Systems</strong><br />
+  Linux (RHEL/CentOS), Kubernetes, Docker, AWS, distributed systems</p>
+
+  <p><strong>Real-Time Communications</strong><br />
+  SIP, Session Border Controllers (SBC), SIP soft switches, RTP, voice/video interoperability, latency-sensitive media pipelines</p>
+
+  <p><strong>Languages &amp; Tools</strong><br />
+  Python, PagerDuty, Claude API / LLM tooling</p>
+
+  <p><strong>Incident Management</strong><br />
+  Incident command, postmortems, RCA, corrective action tracking, on-call operations</p>
+
+</div>
+</body>
+</html>
