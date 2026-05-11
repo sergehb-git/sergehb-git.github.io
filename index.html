@@ -29,7 +29,6 @@
       border-radius: 4px;
       box-shadow: 0 1px 6px rgba(0,0,0,0.08);
       border-left: 4px solid #1a3a5c;
-      position: relative;
     }
 
     @media (max-width: 520px) {
@@ -38,16 +37,33 @@
       }
     }
 
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.5em;
+      margin-bottom: 1.8em;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 0;
+    }
+
     .photo {
-      position: absolute;
-      top: 2.5em;
-      right: 2.5em;
+      flex-shrink: 0;
       width: 120px;
       height: 120px;
       border-radius: 50%;
       overflow: hidden;
       border: 3px solid #1a3a5c;
-      flex-shrink: 0;
+    }
+
+    @media (max-width: 520px) {
+      .photo {
+        width: 80px;
+        height: 80px;
+      }
     }
 
     .photo img {
@@ -64,10 +80,15 @@
       font-family: Georgia, 'Times New Roman', serif;
     }
 
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 1.7em;
+      }
+    }
+
     .tagline {
       font-size: 1em;
       color: #555;
-      margin-bottom: 1.8em;
       font-style: italic;
     }
 
@@ -113,9 +134,13 @@
 </head>
 <body>
   <div class="card">
-    <div class="photo"><img src="photo.png" alt="Serge Braverman" /></div>
-    <h1>Serge Braverman</h1>
-    <p class="tagline">Infrastructure &amp; Reliability Engineer · San Francisco, CA</p>
+    <div class="header">
+      <div class="header-text">
+        <h1>Serge Braverman</h1>
+        <p class="tagline">Infrastructure &amp; Reliability Engineer · San Francisco, CA</p>
+      </div>
+      <div class="photo"><img src="photo.png" alt="Serge Braverman" /></div>
+    </div>
     <hr class="divider" />
 
     <p>
