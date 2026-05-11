@@ -27,15 +27,22 @@
       padding: 3em 4em;
       border-radius: 4px;
       box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      border-left: 4px solid #1a3a5c;
       position: relative;
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 2em 1.5em;
+      }
     }
 
     .photo {
       position: absolute;
       top: 2.5em;
       right: 2.5em;
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       overflow: hidden;
       border: 3px solid #1a3a5c;
@@ -64,7 +71,7 @@
 
     .divider {
       border: none;
-      border-top: 2px solid #1a3a5c;
+      border-top: 1px solid #c0c8d2;
       margin-bottom: 1.8em;
     }
 
@@ -76,25 +83,27 @@
     .links {
       margin-top: 2em;
       display: flex;
-      gap: 1.5em;
+      gap: 0.75em;
       flex-wrap: wrap;
     }
 
     .links a {
       color: #1a3a5c;
       text-decoration: none;
-      font-size: 0.95em;
-      border-bottom: 1px solid #1a3a5c;
-      padding-bottom: 1px;
-      transition: opacity 0.2s;
+      font-size: 0.9em;
+      border: 1px solid #1a3a5c;
+      border-radius: 20px;
+      padding: 0.25em 0.9em;
+      transition: background-color 0.2s, color 0.2s;
     }
 
     .links a:hover {
-      opacity: 0.7;
+      background-color: #1a3a5c;
+      color: #fff;
     }
 
     .contact {
-      margin-top: 1.8em;
+      margin-top: 1.2em;
       font-size: 0.9em;
       color: #666;
     }
@@ -115,7 +124,7 @@
     </p>
 
     <p>
-      Most recently at Salesforce, where I was a founding member of the Resilience
+      Most recently at Salesforce, where I was an early member of the Resilience
       Engineering organization and a President's Award recipient for designing Critical
       User Journey monitoring used across one of the world's largest SaaS platforms.
       Before that, I owned the voice infrastructure stack at Vocalocity through the
@@ -132,7 +141,7 @@
       <a href="resume.html">Resume</a>
       <a href="https://github.com/sergehb-git" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/serge-braverman-49633a2" target="_blank">LinkedIn</a>
-      <a href="mailto:sergehb@gmail.com">sergehb@gmail.com</a>
+      <a href="mailto:sergehb@gmail.com">Email</a>
     </div>
 
     <p class="contact">415-323-6561</p>
